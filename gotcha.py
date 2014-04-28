@@ -35,8 +35,8 @@ def wait(busy):
 def log(load_avg_fifteen,process_list):
 	log_filename = '_'.join([
 							LOG_FILENAME_BASE,
-							str(load_avg_fifteen),
 							time.strftime(LOG_TIMESTAMP_FORMAT),
+							str(load_avg_fifteen),
 							])
 	file = open('/'.join([LOG_DIRECTORY,log_filename]),'w')
 	file.write(process_list)
